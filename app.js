@@ -27,8 +27,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/heroes', heroesRouter);
 app.use('/heroes/:id/profesion', heroesRouter);
-app.use('/heroes/:id/resenia/tipo', heroesRouter);
-app.use('/creditos', creditsRouter);
+app.use('/heroes/:id/resenia/:tipo?', heroesRouter);
+app.use('/credits', creditsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
+const creditsController = require("../controllers/creditsController.js")
+
 /* GET /creditos */
-router.get('/', function(req, res, next) {
-  res.render('credits');
-});
+router.get('/', creditsController.credits);
 
 module.exports = router;

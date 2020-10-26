@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes Digitales</title>
+</head>
+<body>
+    <% if (profesion.length == 0) { %>
+    <p>No tenemos en nuestra base ningún héroe ni heroína con ese id</p>
+    <% } %>
+    
+    <% if (profesion.length !== 0) { %>
+        <p>Hola, mi nombre es <%=profesion[0].nombre%> y soy <%=profesion[0].profesion%></p>
+    <% } %>
+</body>
+</html>
